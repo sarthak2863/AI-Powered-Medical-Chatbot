@@ -1,0 +1,139 @@
+/* ===== GLOBAL ===== */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.medical-bg {
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+}
+
+/* ===== CHAT CARD ===== */
+.chat {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card {
+    height: 540px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+.card-header {
+    background: linear-gradient(90deg, #00bfa5, #0288d1);
+    color: white;
+    border-bottom: none;
+}
+
+.user_info span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user_info p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* ===== AVATARS ===== */
+.user_img {
+    height: 60px;
+    width: 60px;
+    border: 3px solid white;
+}
+
+.user_img_msg {
+    height: 38px;
+    width: 38px;
+    border: 2px solid white;
+}
+
+.online_icon {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    bottom: 5px;
+    right: 5px;
+    border: 2px solid white;
+}
+
+/* ===== CHAT BODY ===== */
+.msg_card_body {
+    background: #f9fbfd;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* ===== MESSAGES ===== */
+.msg_cotainer {
+    background: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 18px;
+    padding: 12px 15px;
+    max-width: 75%;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.msg_cotainer_send {
+    background: #c8e6c9;
+    color: #1b5e20;
+    border-radius: 18px;
+    padding: 12px 15px;
+    max-width: 75%;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* ===== TIMESTAMP ===== */
+.msg_time,
+.msg_time_send {
+    font-size: 10px;
+    opacity: 0.6;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ===== INPUT ===== */
+.card-footer {
+    background: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.type_msg {
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    background: #f1f5f9;
+    padding-left: 20px;
+}
+
+.type_msg:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.send_btn {
+    background: linear-gradient(90deg, #00bfa5, #0288d1);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.send_btn:hover {
+    opacity: 0.9;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
